@@ -36,6 +36,7 @@ func (self *ClassReader) readUint16s() []uint16 {
 	for i := range s {
 		s[i] = self.readUint16()
 	}
+	return s
 }
 
 func (self *ClassReader) readBytes(n uint32) []byte {
