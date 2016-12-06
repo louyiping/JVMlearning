@@ -28,6 +28,7 @@ func loadClass(className string, cp *classpath.Classpath) *classfile.ClassFile {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Printf("class data:%v\n", classData)
 	cf, err := classfile.Parse(classData)
 	if err != nil {
 		panic(err)
